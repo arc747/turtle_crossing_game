@@ -32,8 +32,3 @@ class CarManager:
             else:
                 car.goto(250, random.randrange(-220, 220, 20))
                 car.fd(STARTING_MOVE_DISTANCE)
-    #
-    # def create_cars(self):
-    #     for i in (range(-240, 240, 20)):
-    #         self.t.goto(250, i)
-    #         self.move_car()
