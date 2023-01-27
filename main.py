@@ -27,10 +27,12 @@ while game_is_on:
     cars.move_car()
     for car in cars.all_cars:
         if car.distance(p) < 20:
+            sr.game_over()
             game_is_on = False
     count += 1
     if p.reset():
         sr.update_score()
+        cars.level_up()
     time.sleep(0.1)
     screen.update()
 
